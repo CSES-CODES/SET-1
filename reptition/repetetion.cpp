@@ -1,4 +1,4 @@
-#include<bits/stdc++.h> 
+/*#include<bits/stdc++.h> 
 using namespace std; 
 int main(){ 
     string str; 
@@ -22,4 +22,30 @@ int main(){
     return 0; 
 
 
+}*/
+//Ignore Above Code.. 
+//try This 
+#include<bits/stdc++.h> 
+using namespace std; 
+int main(){ 
+    string s; 
+    cin>>s; 
+    long long count=1; 
+    long long maxcount=0; 
+    for(int i=0;i<s.size()-1;i++){ 
+        if(s[i]==s[i+1]) 
+        count++; 
+        else 
+        count=1; 
+        if(count>maxcount)  
+        maxcount=count;
+
+    } 
+    //Edge Case 
+    if(s.size()==1) 
+    cout<<1; 
+    else 
+    cout<<maxcount; 
+    return 0; 
+    
 }
