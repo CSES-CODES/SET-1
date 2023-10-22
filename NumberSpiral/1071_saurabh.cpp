@@ -1,7 +1,6 @@
 #include <iostream>
 /*A number spiral is an infinite grid whose upper-left square has number 1. Here are the first five layers of the spiral:*/
 using namespace std;
-
 int main()
 {
 	int tc;
